@@ -1,0 +1,17 @@
+{
+    "name": "m.p.yuzik/server",
+    "autoload": {
+        "psr-4": {
+            "MPYuzik\\Server\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "M.P. Yuzik",
+            "email": "m.p.yuzik@example.com"
+        }
+    ],
+    "require": {
+        "mongodb/mongodb": "^1.21"
+    }
+}
