@@ -4,6 +4,14 @@ header('Content-Type: application/json; charset=utf-8');
 
 $data = json_decode(file_get_contents('php://input'), true);
 
+
+//! Конфиг 
+$config = parse_ini_file(__DIR__ . '/db/config.ini', true);
+//* MongoDB
+$dbName_Mongo = $config['database']['dbname'];
+$host_Mongo = $config['database']['host'];
+
+ 
 if (!$data || !isset($data['siteId'], $data['lastStatus'], $data['dateUpdate'])) {
     http_response_code(400);
     echo json_encode(['status' => 'error', 'message' => 'Некорректные данные']);
@@ -11,8 +19,8 @@ if (!$data || !isset($data['siteId'], $data['lastStatus'], $data['dateUpdate']))
 }
 
 try {
-    $mongo = new MongoDB\Client("mongodb://localhost:27017");
-    $db = $mongo->selectDatabase("sdt");
+    $mongo = new MongoDB\Client($host_Mongo);
+    $db = $mongo->selectDatabase($dbName_Mongo);
     $sitesCol = $db->selectCollection("sites");
 
     // Обновляем запись по siteId

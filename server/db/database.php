@@ -81,6 +81,8 @@ class Site
     public string $stationName;
     public string $pingStatus;
     public string $lastMessageTime;
+    public string $dateUpdate;
+    public string $lastStatus;
 
     public function __construct(array $data)
     {
@@ -89,6 +91,8 @@ class Site
         $this->stationName = $data['stationName'];
         $this->pingStatus = $data['pingStatus'];
         $this->lastMessageTime = $data['lastMessageTime'];
+        $this->dateUpdate = $data['dateUpdate'];
+        $this->lastStatus = $data['lastStatus'];
     }
 
     public function toArray(): array
@@ -99,6 +103,8 @@ class Site
             'stationName' => $this->stationName,
             'pingStatus' => $this->pingStatus,
             'lastMessageTime' => $this->lastMessageTime,
+            'dateUpdate' => $this->dateUpdate,
+            'lastStatus' => $this->lastStatus
         ];
     }
 }

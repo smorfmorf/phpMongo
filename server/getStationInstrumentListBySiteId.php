@@ -1,4 +1,22 @@
 <?php
+
+
+
+
+//! Конфиг 
+$config = parse_ini_file(__DIR__ . '/db/config.ini', true);
+
+//* PostgreSQL
+$host_Postgres = $config['amurDb']['host'];
+$dbName_Postgres = $config['amurDb']['dbname'];
+$user_Postgres = $config['amurDb']['user'];
+$pass_Postgres = $config['amurDb']['pass'];
+$port_Postgres = $config['amurDb']['port'];
+
+
+
+
+
 function getStationInstrumentListBySiteId($siteId)
 {
     // Словарь siteInstrumentMeta (как в C#)
@@ -7,13 +25,23 @@ function getStationInstrumentListBySiteId($siteId)
         4 => "IP адрес поста"
     ];
 
-    // Строка подключения (замени своими данными)
-    $dsn = "pgsql:host=10.8.3.180;port=5432;dbname=ferhri.amur;user=postgres;password=qq";
+    //! Не работает модалка изза этого  (сюда не приходят данные)
+    global $host_Postgres, $port_Postgres, $dbName_Postgres, $user_Postgres, $pass_Postgres;
+    $dsn = sprintf(
+        "pgsql:host=%s;port=%s;dbname=%s;user=%s;password=%s",
+        $host_Postgres,
+        $port_Postgres,
+        $dbName_Postgres,
+        $user_Postgres,
+        $pass_Postgres
+    );
+    //!~ Это работает: 180 
+    $dsnTest = "pgsql:host=10.8.3.180;port=5432;dbname=ferhri.amur;user=postgres;password=qq";
 
     $stationsData = [];
-
     try {
-        $pdo = new PDO($dsn);
+    // TODO: ТУТ 180 ПОРТ НУЖНО ЗАМЕНИТЬ dsnTest на dsn
+        $pdo = new PDO($dsnTest);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
         // Собираем список ID из словаря
@@ -57,6 +85,6 @@ header('Content-Type: application/json; charset=utf-8');
 
 
 // --- Чтение параметров запроса ---
-$siteId = $_GET['siteId'] ?? '123';
+$siteId = $_GET['siteId'] ?? '';
 
 echo getStationInstrumentListBySiteId($siteId);

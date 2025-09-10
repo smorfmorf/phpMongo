@@ -1,20 +1,38 @@
 <?php
 require __DIR__ . '/vendor/autoload.php'; // важно!
 
+//! Конфиг 
+$config = parse_ini_file(__DIR__ . '/db/config.ini', true);
+
+//* MongoDB
+$host_Mongo = $config['database']['host'];
+$dbName_Mongo = $config['database']['dbname'];
+
+// * PostgreSQL
+$host_Postgres = $config['amurDb']['host'];
+$dbName_Postgres = $config['amurDb']['dbname'];
+$user_Postgres = $config['amurDb']['user'];
+$pass_Postgres = $config['amurDb']['pass'];
+$port_Postgres = $config['amurDb']['port'];
+
+
 $region = isset($_GET['region']) ? $_GET['region'] : 27;
 $type = isset($_GET['type']) ? $_GET['type'] : "1,5";
+
+// Вызов функции
+getStationsListLocal($region, $type);
+
 
 
 function getStationsListLocal($region, $type) {
     // Лог
     error_log("Getting list of sites");
-
     $finalDataList = [];
-
     try {
+        global $host_Mongo, $dbName_Mongo;
         // --- MongoDB подключение ---
-        $mongo = new MongoDB\Client("mongodb://localhost:27017");
-        $db = $mongo->selectDatabase("sdt"); // название базы
+        $mongo = new MongoDB\Client($host_Mongo);
+        $db = $mongo->selectDatabase($dbName_Mongo); // название базы
         $sitesCol = $db->selectCollection("sites");
 
         // Получаем все сайты
@@ -22,7 +40,17 @@ function getStationsListLocal($region, $type) {
         $sites = iterator_to_array($sitesCursor);
 
         // Подключаемся к PostgreSQL
-        $dsn = "pgsql:host=10.8.3.180;port=5432;dbname=ferhri.amur;user=postgres;password=qq";
+        // $dsn = "pgsql:host=10.8.3.219;port=5433;dbname=ferhri.amur;user=postgres;password=qq";
+       global $host_Postgres, $port_Postgres, $dbName_Postgres, $user_Postgres, $pass_Postgres;
+
+        $dsn = sprintf(
+        "pgsql:host=%s;port=%s;dbname=%s;user=%s;password=%s",
+        $host_Postgres,
+        $port_Postgres,
+        $dbName_Postgres,
+        $user_Postgres,
+        $pass_Postgres
+        );
         $pdo = new PDO($dsn);
 
         // Собираем ids сайтов
@@ -67,8 +95,8 @@ function getStationsListLocal($region, $type) {
                         "stationRegion" => (int)$station['addr_region_id'],
                         "pingStatus"    => $site['pingStatus'] ?? "",
                         "messageTime"   => $site['lastMessageTime'] ?? null,
-                              "dateUpdate"    => $site['dateUpdate'] ?? null,   // новое поле
-                         "lastStatus"    => $site['lastStatus'] ?? null    // новое поле
+                        "dateUpdate"    => $site['dateUpdate'] ?? null,   // новое поле
+                        "lastStatus"    => $site['lastStatus'] ?? null    // новое поле
                     ];
                 }
             }
@@ -83,5 +111,3 @@ function getStationsListLocal($region, $type) {
     header('Content-Type: application/json; charset=utf-8');
     echo json_encode($finalDataList, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 }
-// Вызов функции
-getStationsListLocal($region, $type);

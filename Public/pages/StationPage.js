@@ -241,7 +241,7 @@ export default {
       v-if="showModal"
       class="modal-overlay fixed inset-0 z-20 bg-black/50 grid place-items-center"
     >
-      <div class="modal-window bg-white w-[1000px] max-h-[90vh] overflow-y-auto rounded-xl shadow-xl p-6">
+      <div class="modal-window bg-white w-[1100px] max-h-[90vh] overflow-y-auto rounded-xl shadow-xl p-6">
         
         <!-- header -->
         <div class="station-item__header flex items-center justify-between border-b pb-3 mb-5">
@@ -322,7 +322,7 @@ export default {
               <!-- Атрибуты -->
               <div v-show="activeTab === 'attributes'" class="space-y-4">
                 <div class="flex items-center gap-3">
-                  <select id="attrId" class="rounded border-gray-300 shadow-sm focus:ring-blue-500" v-model="selectedAttribute">
+                  <select id="attrId" class="rounded border-gray-300 shadow-lg focus:ring-blue-500 p-3" v-model="selectedAttribute">
                     <option disabled value="">Выбрать атрибут</option>
                     <option v-for="attr in filteredAttributesForSelector"
                       :key="attr.attrTypeId"
@@ -332,7 +332,7 @@ export default {
                   </select>
 
                   <input v-model="inputOption" type="text" id="attrNew" placeholder="Значение"
-                    class="flex-1 rounded border-gray-300 shadow-sm focus:ring-blue-500"/>
+                    class="flex-1 rounded border-gray-300 shadow-sm focus:ring-blue-500 p-3"/>
                   <button type="button" class="btn btn-success bg-green-600 text-white px-4 py-2 rounded"
                     @click="addAttribute()">
                     Добавить атрибут
@@ -350,9 +350,11 @@ export default {
                   <tbody id="attrBlock" class="divide-y divide-gray-200">
                     <tr v-for="(attr, idx) in filteredAttributes" :key="idx">
                       <td class="px-3 py-2">{{ attr.desc }}</td>
-                      <td class="px-3 py-2">{{ attr.value }}</td>
+                      <td class="px-3 py-2"><input type="text" v-model="attr.value"/></td>
                       <td class="px-3 py-2">{{ formatDate(attr.date) }}</td>
-                      <td class="px-3 py-2">{{ formatDate(attr.updated) }}</td>
+                      <td class="px-3 py-2">
+                      <button class="p-2 bg-green-400 text-white rounded hover:bg-green-500 active:bg-green-600" @click="updateStationAttribute(attr)">Обновить</button>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -537,6 +539,34 @@ export default {
     },
   },
   methods: {
+    async updateStationAttribute(attr) {
+      console.log("✌️attr --->", attr);
+      console.log(this.selectedStation);
+
+      const newObj = {
+        siteId: this.selectedStation.siteId,
+        attrValues: [attr.value],
+        attrIds: [attr.attrTypeId],
+      };
+
+      const { data } = await axios.get(
+        `${this.baseURL}/server/setStationAttributeData.php`,
+        {
+          params: {
+            siteId: newObj.siteId,
+            attrValues: newObj.attrValues,
+            attrIds: newObj.attrIds,
+          },
+        }
+      );
+      console.log("✌️data --->", data);
+      console.log("✌️newObj --->", newObj);
+
+      this.attributes = this.attributes.map((a) => {
+        return a.attrTypeId === attr.attrTypeId ? attr : a;
+      });
+    },
+
     addAttribute() {
       console.log(this.selectedAttribute);
 
@@ -558,7 +588,9 @@ export default {
 
     async setShowModal(station) {
       this.selectedStation = station;
+      console.log("✌️selectedStation --->", this.selectedStation);
       this.showModal = !this.showModal;
+      this.activeTab = "instruments";
 
       const { data } = await axios.get(
         `${this.baseURL}/server/getStationInstrumentListBySiteId.php`,
@@ -568,15 +600,22 @@ export default {
           },
         }
       );
+
       this.forIP = data[1];
       this.forTelnet = data[0];
 
+      console.log("✌️data --->", data);
+
       const response = await axios.get(
-        `${this.baseURL}/server/getStationAttributeListBySiteId.php`
+        `${this.baseURL}/server/getStationAttributeListBySiteId.php`,
+        {
+          params: {
+            siteId: this.selectedStation.siteId,
+          },
+        }
       );
       this.attributes = response.data;
       console.log("✌️attributes --->", this.attributes);
-      console.log("✌️data$$$$$$$$$ --->", data);
     },
 
     async changeAddressModal(ObjProxy) {
@@ -771,13 +810,26 @@ export default {
 
       this.showPopover = false;
 
+      const response = await axios.get(
+        `${this.baseURL}/server/getStationInstrumentDataById.php`,
+        {
+          params: {
+            siteId: station.siteId,
+            instrumentId: 1,
+          },
+        }
+      );
+
+      const telnetIP = response.data.split(":");
+      console.log("✌️telnetIP --->", telnetIP);
+
       try {
         console.log(`Telnet localhost для станции: ${station.stationName}`);
 
         const { data } = await axios.get(`${this.baseURL}/server/telnet.php`, {
           params: {
-            host: "127.0.0.1",
-            port: 80,
+            host: telnetIP[0],
+            port: telnetIP[1],
           },
         });
 

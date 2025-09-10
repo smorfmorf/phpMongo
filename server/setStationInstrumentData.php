@@ -1,4 +1,19 @@
 <?php
+
+
+
+//! Конфиг 
+$config = parse_ini_file(__DIR__ . '/db/config.ini', true);
+
+//* PostgreSQL
+$host_Postgres = $config['amurDb']['host'];
+$dbName_Postgres = $config['amurDb']['dbname'];
+$user_Postgres = $config['amurDb']['user'];
+$pass_Postgres = $config['amurDb']['pass'];
+$port_Postgres = $config['amurDb']['port'];
+
+
+
 function setStationInstrumentData($siteId, $values, $instrumentIds)
 {
     // Словарь siteInstrumentMeta (как в C#)
@@ -8,7 +23,18 @@ function setStationInstrumentData($siteId, $values, $instrumentIds)
     ];
 
     // Строка подключения
-    $dsn = "pgsql:host=10.8.3.180;port=5432;dbname=ferhri.amur;user=postgres;password=qq";
+    // $dsn = "pgsql:host=10.8.3.219;port=5433;dbname=ferhri.amur;user=postgres;password=qq";
+    global $host_Postgres, $port_Postgres, $dbName_Postgres, $user_Postgres, $pass_Postgres;
+
+    $dsn = sprintf(
+        "pgsql:host=%s;port=%s;dbname=%s;user=%s;password=%s",
+        $host_Postgres,
+        $port_Postgres,
+        $dbName_Postgres,
+        $user_Postgres,
+        $pass_Postgres
+    );
+
 
     try {
         $pdo = new PDO($dsn);
@@ -54,8 +80,8 @@ header('Content-Type: application/json; charset=utf-8');
 // $values = ["значение6666"];
 // $instrumentIds = [4];
 
-$siteId = $_GET['siteId'] ?? '';
-$values = $_GET['values'] ?? '';
-$instrumentIds = $_GET['instrumentIds'] ?? '';
+$siteId = $_GET['siteId'] ?? "";
+$values = $_GET['values'] ?? "";
+$instrumentIds = $_GET['instrumentIds'] ?? "";
 
 echo setStationInstrumentData($siteId, $values, $instrumentIds);

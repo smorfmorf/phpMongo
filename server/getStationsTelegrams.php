@@ -1,38 +1,23 @@
 <?php
 require 'vendor/autoload.php'; // если будут нужны сторонние библиотеки, например для MongoDB
 
-/**
- * Получение строки подключения к базе SDT (MySQL)
- */
-function getSDTConnection() {
-    $config = [
-        'SDTDbAddr' => '10.8.3.182',
-        'SDTDbUser' => 'habwrf',
-        'SDTDbPass' => '10model@@',
-        'SDTDb'     => 'meteo'
-    ];
-    return $config;
-}
 
-/**
- * Получение строки подключения к базе Amur (PostgreSQL)
- */
-function getAmurConnection() {
-    $config = [
-        'amurDbAddr' => '10.8.3.180',
-        'amurDbUser' => 'postgres',
-        'amurDbPass' => 'qq',
-        'amurDb'     => 'ferhri.amur'
-    ];
+//! Конфиг 
+$config = parse_ini_file(__DIR__ . '/db/config.ini', true);
 
-    return sprintf(
-        "pgsql:host=%s;port=5432;dbname=%s;user=%s;password=%s",
-        $config['amurDbAddr'],
-        $config['amurDb'],
-        $config['amurDbUser'],
-        $config['amurDbPass']
-    );
-}
+//* PostgreSQL
+$host_Postgres = $config['amurDb']['host'];
+$dbName_Postgres = $config['amurDb']['dbname'];
+$user_Postgres = $config['amurDb']['user'];
+$pass_Postgres = $config['amurDb']['pass'];
+$port_Postgres = $config['amurDb']['port'];
+
+//* MySQL
+$host_MySQL = $config['SDTDb']['host'];
+$dbName_MySQL = $config['SDTDb']['dbname'];
+$user_MySQL = $config['SDTDb']['user'];
+$pass_MySQL = $config['SDTDb']['pass'];
+//  $dsnPg = "pgsql:host=10.8.3.219;port=5433;dbname=ferhri.amur;user=postgres;password=qq";
 
 
 
@@ -47,7 +32,17 @@ function getLastTelegramsForStation($stationCode, $siteId) {
 
     try {
         // --- PostgreSQL: получаем фильтры ---
-        $pdo = new PDO(getAmurConnection(), null, null, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+       global $host_Postgres, $port_Postgres, $dbName_Postgres, $user_Postgres, $pass_Postgres;
+        $dsnPg = sprintf(
+            "pgsql:host=%s;port=%s;dbname=%s;user=%s;password=%s",
+            $host_Postgres,
+            $port_Postgres,
+            $dbName_Postgres,
+            $user_Postgres,
+            $pass_Postgres
+        );
+
+        $pdo = new PDO($dsnPg);
         $sql = "SELECT value FROM meta.site_attr_value WHERE entity_id = :siteId AND attr_type_id = 1030";
         $stmt = $pdo->prepare($sql);
         $stmt->execute(['siteId' => $siteId]);
@@ -68,9 +63,17 @@ function getLastTelegramsForStation($stationCode, $siteId) {
         }
 
         // --- MySQL: получаем телеграммы ---
-        $cfg = getSDTConnection();
-        $dsn = "mysql:host={$cfg['SDTDbAddr']};dbname={$cfg['SDTDb']};charset=utf8";
-        $pdoMy = new PDO($dsn, $cfg['SDTDbUser'], $cfg['SDTDbPass'], [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+      
+        global $host_MySQL, $dbName_MySQL, $user_MySQL, $pass_MySQL;
+        $dsnMySQL = sprintf(
+            "mysql:host=%s;dbname=%s;charset=utf8;user=%s;password=%s",
+            $host_MySQL,
+            $dbName_MySQL,
+            $user_MySQL,
+            $pass_MySQL
+        );
+        
+        $pdoMy = new PDO($dsnMySQL);
 
         $tableName = "rpa_rep_290725"; // подставьте актуальное имя таблицы
         $sqlMy = "SELECT * FROM $tableName WHERE nil='DAT' AND rep_id=:stationCode $filters";
@@ -101,8 +104,8 @@ function getLastTelegramsForStation($stationCode, $siteId) {
 }
 
 // --- Чтение параметров запроса ---
-$stationCode = $_GET['stationCode'] ?? '';
-$siteId      = $_GET['siteId'] ?? '';
+$stationCode = $_GET['stationCode'] ?? '31152';
+$siteId      = $_GET['siteId'] ?? '234';
 
 if ($stationCode !== '' && $siteId !== '') {
     getLastTelegramsForStation($stationCode, $siteId);

@@ -1,8 +1,37 @@
 <?php
+header('Content-Type: application/json; charset=utf-8');
+
+//! Конфиг 
+$config = parse_ini_file(__DIR__ . '/db/config.ini', true);
+
+// * PostgreSQL
+$host_Postgres = $config['amurDb']['host'];
+$dbName_Postgres = $config['amurDb']['dbname'];
+$user_Postgres = $config['amurDb']['user'];
+$pass_Postgres = $config['amurDb']['pass'];
+$port_Postgres = $config['amurDb']['port'];
+
+
+
+// --- Чтение параметров запроса ---
+$siteId = $_GET['siteId'] ?? '';
+echo getStationAttributeListBySiteId($siteId);
+
+
+
+
 function getStationAttributeListBySiteId($siteId)
 {
-    // строка подключения (замени на свои параметры)
-    $dsn = "pgsql:host=10.8.3.180;port=5432;dbname=ferhri.amur;user=postgres;password=qq";
+
+    global $host_Postgres, $port_Postgres, $dbName_Postgres, $user_Postgres, $pass_Postgres;
+    $dsn = sprintf(
+        "pgsql:host=%s;port=%s;dbname=%s;user=%s;password=%s",
+        $host_Postgres,
+        $port_Postgres,
+        $dbName_Postgres,
+        $user_Postgres,
+        $pass_Postgres
+    );
 
     $stationsData = [];
 
@@ -52,11 +81,3 @@ function getStationAttributeListBySiteId($siteId)
         ], JSON_UNESCAPED_UNICODE);
     }
 }
-
-
-header('Content-Type: application/json; charset=utf-8');
-
-// --- Чтение параметров запроса ---
-$siteId = $_GET['siteId'] ?? '123';
-
-echo getStationAttributeListBySiteId(234);
