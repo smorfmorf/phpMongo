@@ -1,0 +1,58 @@
+[
+  {
+    "_id": 1,
+    "stationCode": "1",
+    "stationName": "1",
+    "pingStatus": "bad",
+    "lastMessageTime": "53"
+  },
+  {
+    "_id": 2,
+    "stationCode": "2",
+    "stationName": "2",
+    "pingStatus": "bad",
+    "lastMessageTime": "53"
+  },
+  {
+    "_id": 3,
+    "stationCode": "3",
+    "stationName": "3",
+    "pingStatus": "bad",
+    "lastMessageTime": "53"
+  },
+  {
+    "_id": 4,
+    "stationCode": "4",
+    "stationName": "4",
+    "pingStatus": "bad",
+    "lastMessageTime": "53"
+  },
+  {
+    "_id": 5,
+    "stationCode": "5",
+    "stationName": "5",
+    "pingStatus": "bad",
+    "lastMessageTime": "53"
+  },
+  {
+    "_id": 6,
+    "stationCode": "6",
+    "stationName": "6",
+    "pingStatus": "bad",
+    "lastMessageTime": "53"
+  },
+  {
+    "_id": 7,
+    "stationCode": "7",
+    "stationName": "7",
+    "pingStatus": "bad",
+    "lastMessageTime": "53"
+  },
+  {
+    "_id": 8,
+    "stationCode": "8",
+    "stationName": "9",
+    "pingStatus": "bad",
+    "lastMessageTime": "53"
+  }
+]

@@ -1,0 +1,2954 @@
+[
+  {
+    "_id": 3,
+    "stationCode": "06005",
+    "stationName": "Джалинда",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:02:54",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 4,
+    "stationCode": "06010",
+    "stationName": "Черняево",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:03:13",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 5,
+    "stationCode": "06016",
+    "stationName": "Кумара",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:45:21",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 6,
+    "stationCode": "06020",
+    "stationName": "Сергеевка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:10:25",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 7,
+    "stationCode": "06022",
+    "stationName": "Благовещенск",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:17:16",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 8,
+    "stationCode": "06023",
+    "stationName": "Гродеково",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:19:19",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 9,
+    "stationCode": "06024",
+    "stationName": "Константиновка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:03:13",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10,
+    "stationCode": "06026",
+    "stationName": "Поярково",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:04:15",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 11,
+    "stationCode": "06027",
+    "stationName": "Иннокентьевка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:17:45",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12,
+    "stationCode": "06030",
+    "stationName": "Пашково",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:08:42",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 13,
+    "stationCode": "05001",
+    "stationName": "Екатерино-Никольск.",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:03:05",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 14,
+    "stationCode": "05002",
+    "stationName": "Нагибово",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:23:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 15,
+    "stationCode": "05004",
+    "stationName": "Ленинск",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:05:03",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 16,
+    "stationCode": "05008",
+    "stationName": "Нижнеспасское",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 21:56:07",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 17,
+    "stationCode": "05009",
+    "stationName": "Казакевичево",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 21:53:07",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 18,
+    "stationCode": "05012",
+    "stationName": "Хабаровск",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 21:38:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 19,
+    "stationCode": "05013",
+    "stationName": "Хабаровск",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 21:39:07",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 20,
+    "stationCode": "05016",
+    "stationName": "Елабуга",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:01:07",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 21,
+    "stationCode": "05019",
+    "stationName": "Троицкое",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:07:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 22,
+    "stationCode": "05020",
+    "stationName": "Малмыж",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:15:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 23,
+    "stationCode": "05024",
+    "stationName": "Комсомольск-на-Амуре",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:21:19",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 24,
+    "stationCode": "05026",
+    "stationName": "Нижнетамбовское",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:03:36",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 25,
+    "stationCode": "05029",
+    "stationName": "Циммермановка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:20:54",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 26,
+    "stationCode": "05031",
+    "stationName": "Мариинское",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:10:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 27,
+    "stationCode": "05033",
+    "stationName": "Богородское",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:57:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 28,
+    "stationCode": "05803",
+    "stationName": "Тахта",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-21 22:06:19",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 29,
+    "stationCode": "05805",
+    "stationName": "Николаевск-на-Амуре",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:00:19",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 45,
+    "stationCode": "06250",
+    "stationName": "Сковородино",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:13:39",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 47,
+    "stationCode": "06246",
+    "stationName": "Ст.Уруша",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 48,
+    "stationCode": "06265",
+    "stationName": "Локшак (устье Купури)",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:08:06",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 49,
+    "stationCode": "06910",
+    "stationName": "Бомнак",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:08:06",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 50,
+    "stationCode": "06909",
+    "stationName": "Горный",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 51,
+    "stationCode": "06904",
+    "stationName": "Инарогда",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:38:02",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 53,
+    "stationCode": "06554",
+    "stationName": "Причал",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 54,
+    "stationCode": "06275",
+    "stationName": "Заречная Слобода",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:23:10",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 55,
+    "stationCode": "06544",
+    "stationName": "Овсянка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:19:27",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 56,
+    "stationCode": "06280",
+    "stationName": "Поляковский",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:19:27",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 57,
+    "stationCode": "06286",
+    "stationName": "Мазаново",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:24:56",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 58,
+    "stationCode": "06287",
+    "stationName": "Суражевка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:10:23",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 59,
+    "stationCode": "06291",
+    "stationName": "Малая Сазанка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:26:52",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 60,
+    "stationCode": "06295",
+    "stationName": "Белогорье",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:58:22",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 61,
+    "stationCode": "06296",
+    "stationName": "Благовещенск",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:13:50",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 62,
+    "stationCode": "06299",
+    "stationName": "Пр-к Николаевский",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:08:06",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 63,
+    "stationCode": "06302",
+    "stationName": "В 0,3 км ниже устья р. Амкан",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 64,
+    "stationCode": "06533",
+    "stationName": "Мульмугакан",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 65,
+    "stationCode": "06323",
+    "stationName": "В 53 км от устья",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:08:06",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 66,
+    "stationCode": "06329",
+    "stationName": "Унаха",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:08:21",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 67,
+    "stationCode": "06331",
+    "stationName": "Гилюй-у-Перевоза",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:08:06",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 68,
+    "stationCode": "06334",
+    "stationName": "Тында",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:09:23",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 69,
+    "stationCode": "06345",
+    "stationName": "Арби",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:19:27",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 70,
+    "stationCode": "06349",
+    "stationName": "Рычково",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:08:06",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 71,
+    "stationCode": "06363",
+    "stationName": "Экимчан",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-20 23:39:31",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 72,
+    "stationCode": "06364",
+    "stationName": "Стойба",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:01:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 73,
+    "stationCode": "06369",
+    "stationName": "Норск",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:55:58",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 74,
+    "stationCode": "06373",
+    "stationName": "Усть-Ульма",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:20:02",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 75,
+    "stationCode": "06523",
+    "stationName": "Февральск",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:09:07",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 76,
+    "stationCode": "06387",
+    "stationName": "Устье р.Эльга",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:54:56",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 77,
+    "stationCode": "06421",
+    "stationName": "Белогорск",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:55:28",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 78,
+    "stationCode": "06443",
+    "stationName": "Михайловка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:35:35",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 79,
+    "stationCode": "06551",
+    "stationName": "В 6.5 км выше устья р.Усмань",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:02:17",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 80,
+    "stationCode": "06453",
+    "stationName": "Усть-Умальта",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:02:17",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 81,
+    "stationCode": "06456",
+    "stationName": "Усть-Ниман",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:01:28",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 82,
+    "stationCode": "06461",
+    "stationName": "Чекунда",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:02:17",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 83,
+    "stationCode": "06469",
+    "stationName": "Сектагли",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 21:55:41",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 84,
+    "stationCode": "06473",
+    "stationName": "Малиновка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:02:54",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 85,
+    "stationCode": "06478",
+    "stationName": "В 8,0 км от устья",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:03:23",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 86,
+    "stationCode": "06479",
+    "stationName": "В 12 км от устья р.Акишмы",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:01:28",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 87,
+    "stationCode": "06564",
+    "stationName": "р.Туюн - в 9 км ниже устья р.Талибджан",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 88,
+    "stationCode": "06491",
+    "stationName": "У ж/д Моста",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:01:51",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 89,
+    "stationCode": "06539",
+    "stationName": "Малинник",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 90,
+    "stationCode": "06497",
+    "stationName": "Р/д Аланап",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 91,
+    "stationCode": "06511",
+    "stationName": "Аркадьевка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:23:10",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 92,
+    "stationCode": "06574",
+    "stationName": "Облучье",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 93,
+    "stationCode": "05044",
+    "stationName": "Биджан",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:05:03",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 94,
+    "stationCode": "05055",
+    "stationName": "Биракан",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:25:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 95,
+    "stationCode": "05059",
+    "stationName": "Бира",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:15:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 96,
+    "stationCode": "05063",
+    "stationName": "Биробиджан",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 01:30:15",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 97,
+    "stationCode": "05082",
+    "stationName": "Биробиджан",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:01:07",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 104,
+    "stationCode": "05113",
+    "stationName": "Лончаково",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:20:35",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 105,
+    "stationCode": "05115",
+    "stationName": "Шереметьево",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:37:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 106,
+    "stationCode": "05116",
+    "stationName": "Венюково",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:08:29",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 107,
+    "stationCode": "05117",
+    "stationName": "Новосоветское",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:36:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 120,
+    "stationCode": "05328",
+    "stationName": "Дормидонтовка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:08:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 121,
+    "stationCode": "05331",
+    "stationName": "ЛЗУ Медвежий Ключ",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:03:48",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 122,
+    "stationCode": "05332",
+    "stationName": "ЛЗУ Шумный",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:10:29",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 123,
+    "stationCode": "05335",
+    "stationName": "Тивяку",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:17:43",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 124,
+    "stationCode": "05336",
+    "stationName": "Среднехорский",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:34:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 125,
+    "stationCode": "05339",
+    "stationName": "Бичевая",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:08:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 126,
+    "stationCode": "05347",
+    "stationName": "Хор",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:07:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 127,
+    "stationCode": "05348",
+    "stationName": "Сукпай",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:29:43",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 128,
+    "stationCode": "05758",
+    "stationName": "Долми",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:20:35",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 129,
+    "stationCode": "05349",
+    "stationName": "Лзп Катэн",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:38:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 130,
+    "stationCode": "05352",
+    "stationName": "Марусино",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 02:07:26",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 131,
+    "stationCode": "05354",
+    "stationName": "Переяславка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 02:11:29",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 132,
+    "stationCode": "05746",
+    "stationName": "Смидович",
+    "pingStatus": null,
+    "lastMessageTime": "2023-07-19 21:49:24",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 133,
+    "stationCode": "05358",
+    "stationName": "Архангеловка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:27:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 134,
+    "stationCode": "05364",
+    "stationName": "Верховье Урми",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:42:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 135,
+    "stationCode": "05370",
+    "stationName": "Урми",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 21:37:40",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 136,
+    "stationCode": "05375",
+    "stationName": "Кур",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 21:47:38",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 137,
+    "stationCode": "05383",
+    "stationName": "р.Кур - с.Новокуровка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:22:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 138,
+    "stationCode": "05403",
+    "stationName": "Манома 1-я",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:00:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 139,
+    "stationCode": "05733",
+    "stationName": "Снежный",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:21:19",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 140,
+    "stationCode": "05446",
+    "stationName": "Ирумка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:02:17",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 141,
+    "stationCode": "05449",
+    "stationName": "Каменка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:45:04",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 142,
+    "stationCode": "05451",
+    "stationName": "Им. Полины Осипенко",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:15:44",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 143,
+    "stationCode": "05453",
+    "stationName": "Гуга",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:45:04",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 144,
+    "stationCode": "05454",
+    "stationName": "Удинское",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 21:04:30",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 145,
+    "stationCode": "05458",
+    "stationName": "Апкороши",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:45:04",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 146,
+    "stationCode": "05459",
+    "stationName": "Тимченко",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:45:04",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 147,
+    "stationCode": "05469",
+    "stationName": "Тумнин",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:21:19",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 148,
+    "stationCode": "05472",
+    "stationName": "Высокогорный",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 149,
+    "stationCode": "01569",
+    "stationName": "Удское",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:45:56",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 150,
+    "stationCode": "01575",
+    "stationName": "Бурукан",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 151,
+    "stationCode": "03268",
+    "stationName": "Нелькан",
+    "pingStatus": null,
+    "lastMessageTime": "2023-07-19 21:43:38",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 152,
+    "stationCode": "03269",
+    "stationName": "Аим",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:25:47",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 154,
+    "stationCode": "03165",
+    "stationName": "Усть-Нюкжа",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:02:11",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 155,
+    "stationCode": "03172",
+    "stationName": "Лопча",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:02:54",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 164,
+    "stationCode": "05420",
+    "stationName": "Солнечный",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:21:19",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 165,
+    "stationCode": "06283",
+    "stationName": "Чагоян",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 166,
+    "stationCode": "06492",
+    "stationName": "р.Тырма в 2.5км устья р.Яурин",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:02:17",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 168,
+    "stationCode": "06325",
+    "stationName": "В 90 км от устья",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 169,
+    "stationCode": "05745",
+    "stationName": "Горин",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 170,
+    "stationCode": "06282",
+    "stationName": "Ураловка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:58:41",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 176,
+    "stationCode": "06417",
+    "stationName": "Воскресеновка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:21:59",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 177,
+    "stationCode": "06371",
+    "stationName": "Талакан-Причал",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 178,
+    "stationCode": "06488",
+    "stationName": "р.Дубликан - в 33 км от устья",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:02:17",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 179,
+    "stationCode": "05365",
+    "stationName": "Кукан",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:20:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 180,
+    "stationCode": "05399",
+    "stationName": "Арсеньево",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 181,
+    "stationCode": "05762",
+    "stationName": "Тавлинка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:19:16",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 182,
+    "stationCode": "05467",
+    "stationName": "Тулучи",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:21:19",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 195,
+    "stationCode": "05004",
+    "stationName": "Ленинск",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:05:03",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 196,
+    "stationCode": "05009",
+    "stationName": "Казакевичево",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 21:53:07",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 197,
+    "stationCode": "05012",
+    "stationName": "Хабаровск",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 21:38:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 198,
+    "stationCode": "05013",
+    "stationName": "Хабаровск",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 21:39:07",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 199,
+    "stationCode": "05019",
+    "stationName": "Троицкое",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:07:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 200,
+    "stationCode": "05024",
+    "stationName": "Комсомольск-на-Амуре",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:21:19",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 201,
+    "stationCode": "05033",
+    "stationName": "Богородское",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:57:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 202,
+    "stationCode": "05063",
+    "stationName": "Биробиджан",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 01:30:15",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 205,
+    "stationCode": "05335",
+    "stationName": "Тивяку",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:17:43",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 206,
+    "stationCode": "05336",
+    "stationName": "Среднехорский",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:34:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 207,
+    "stationCode": "05339",
+    "stationName": "Бичевая",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:08:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 208,
+    "stationCode": "05347",
+    "stationName": "Хор",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:07:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 209,
+    "stationCode": "05352",
+    "stationName": "Марусино",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 02:07:26",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 210,
+    "stationCode": "05354",
+    "stationName": "Переяславка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 02:11:29",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 220,
+    "stationCode": "06456",
+    "stationName": "Усть-Ниман",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:01:28",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 221,
+    "stationCode": "06479",
+    "stationName": "В 12 км от устья р.Акишмы",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:01:28",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 222,
+    "stationCode": "06488",
+    "stationName": "р.Дубликан - в 33 км от устья",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:02:17",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 223,
+    "stationCode": "06492",
+    "stationName": "р.Тырма в 2.5км устья р.Яурин",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:02:17",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 224,
+    "stationCode": "06551",
+    "stationName": "В 6.5 км выше устья р.Усмань",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:02:17",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 225,
+    "stationCode": "06564",
+    "stationName": "р.Туюн - в 9 км ниже устья р.Талибджан",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 230,
+    "stationCode": "30499",
+    "stationName": "Тында",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:10:05",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 231,
+    "stationCode": "30683",
+    "stationName": "Ерофей Павлович",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:12:10",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 232,
+    "stationCode": "30692",
+    "stationName": "Сковородино",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:04:53",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 233,
+    "stationCode": "30695",
+    "stationName": "Джалинда",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:05:57",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 234,
+    "stationCode": "31152",
+    "stationName": "Нелькан",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:02:51",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 236,
+    "stationCode": "31168",
+    "stationName": "Аян",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:05:02",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 237,
+    "stationCode": "31174",
+    "stationName": "Большой Шантар",
+    "pingStatus": "",
+    "lastMessageTime": "2023-07-09 01:02:24",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 238,
+    "stationCode": "31253",
+    "stationName": "Бомнак",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:11:23",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 239,
+    "stationCode": "31257",
+    "stationName": "Береговой",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:09:01",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 240,
+    "stationCode": "31285",
+    "stationName": "Удское",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:12:51",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 241,
+    "stationCode": "31286",
+    "stationName": "Чумикан",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:09:48",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 242,
+    "stationCode": "31299",
+    "stationName": "Тыгда",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:11:06",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 243,
+    "stationCode": "31300",
+    "stationName": "Зея",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 01:02:32",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 244,
+    "stationCode": "31329",
+    "stationName": "Экимчан",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 01:19:38",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 245,
+    "stationCode": "31369",
+    "stationName": "Николаевск-на-Амуре",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 01:01:20",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 246,
+    "stationCode": "31371",
+    "stationName": "Черняево",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:08:00",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 247,
+    "stationCode": "31373",
+    "stationName": "Октябрьский Прииск",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 01:22:32",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 248,
+    "stationCode": "31388",
+    "stationName": "Норск",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 02:02:24",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 249,
+    "stationCode": "31397",
+    "stationName": "Бысса",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 01:36:27",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 250,
+    "stationCode": "31416",
+    "stationName": "Им.Полины Осипенко",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 01:42:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 251,
+    "stationCode": "31418",
+    "stationName": "Веселая Горка",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:04:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 252,
+    "stationCode": "31423",
+    "stationName": "Удинское",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:03:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 253,
+    "stationCode": "31439",
+    "stationName": "Богородское",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:04:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 254,
+    "stationCode": "31441",
+    "stationName": "Саскаль",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 01:58:22",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 255,
+    "stationCode": "31442",
+    "stationName": "Шимановск",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:13:12",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 256,
+    "stationCode": "31445",
+    "stationName": "Свободный",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:58:44",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 257,
+    "stationCode": "31469",
+    "stationName": "Чегдомын",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:05:17",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 258,
+    "stationCode": "31478",
+    "stationName": "Софийский Прииск",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:04:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 259,
+    "stationCode": "31484",
+    "stationName": "Хуларин",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:15:12",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 260,
+    "stationCode": "31504",
+    "stationName": "Циммермановка",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 01:23:12",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 261,
+    "stationCode": "31510",
+    "stationName": "Благовещенск",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 01:36:49",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 262,
+    "stationCode": "31513",
+    "stationName": "Белогорск",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:13:12",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 263,
+    "stationCode": "31521",
+    "stationName": "Братолюбовка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:12:25",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 264,
+    "stationCode": "31532",
+    "stationName": "Чекунда",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:36:58",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 265,
+    "stationCode": "31534",
+    "stationName": "Сектагли",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:05:51",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 266,
+    "stationCode": "31538",
+    "stationName": "Сутур",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 01:04:29",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 267,
+    "stationCode": "31561",
+    "stationName": "Комсомольск-на-Амуре",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 01:12:43",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 268,
+    "stationCode": "31562",
+    "stationName": "Нижнетамбовское",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:03:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 269,
+    "stationCode": "31566",
+    "stationName": "Сегжема",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:04:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 270,
+    "stationCode": "31583",
+    "stationName": "Малиновка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:14:12",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 271,
+    "stationCode": "31587",
+    "stationName": "Поярково",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:09:01",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 272,
+    "stationCode": "31594",
+    "stationName": "Архара",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:13:12",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 273,
+    "stationCode": "31624",
+    "stationName": "Урми",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:05:51",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 274,
+    "stationCode": "31647",
+    "stationName": "Литовко",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:03:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 275,
+    "stationCode": "31655",
+    "stationName": "Троицкое",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:04:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 276,
+    "stationCode": "31677",
+    "stationName": "Солекуль",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:24:26",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 277,
+    "stationCode": "31683",
+    "stationName": "Тумнин",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:04:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 278,
+    "stationCode": "31702",
+    "stationName": "Облучье",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:00:45",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 279,
+    "stationCode": "31707",
+    "stationName": "Екатерино-Никольское",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:04:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 280,
+    "stationCode": "31710",
+    "stationName": "Ленинское",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:04:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 281,
+    "stationCode": "31713",
+    "stationName": "Биробиджан",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 01:02:03",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 282,
+    "stationCode": "31725",
+    "stationName": "Смидович",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:03:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 284,
+    "stationCode": "31735",
+    "stationName": "Хабаровск",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:59:22",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 285,
+    "stationCode": "31754",
+    "stationName": "Тивяку",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:55:19",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 286,
+    "stationCode": "31770",
+    "stationName": "Советская Гавань",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 01:26:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 287,
+    "stationCode": "31786",
+    "stationName": "Вяземская",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:05:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 288,
+    "stationCode": "31788",
+    "stationName": "Лермонтовка",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:03:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 289,
+    "stationCode": "31801",
+    "stationName": "Гвасюги",
+    "pingStatus": "0.5|166.5",
+    "lastMessageTime": "2023-08-24 00:13:52",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 290,
+    "stationCode": "31832",
+    "stationName": "Бикин",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:03:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 316,
+    "stationCode": "24988",
+    "stationName": "Арка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 01:56:42",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 572,
+    "stationCode": "05448",
+    "stationName": "5448",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 577,
+    "stationCode": "06385",
+    "stationName": "6385",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 578,
+    "stationCode": "06537",
+    "stationName": "6537",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 702,
+    "stationCode": "24982",
+    "stationName": "Уега",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 01:59:41",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 819,
+    "stationCode": "30497",
+    "stationName": "Лопча",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:11:07",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 904,
+    "stationCode": "31087",
+    "stationName": "Улья",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:41:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 916,
+    "stationCode": "31235",
+    "stationName": "Джана",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 917,
+    "stationCode": "31263",
+    "stationName": "Локшак",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:24:26",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 919,
+    "stationCode": "31295",
+    "stationName": "Магдагачи",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:06:59",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 923,
+    "stationCode": "31318",
+    "stationName": "Дугда",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:49:47",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 928,
+    "stationCode": "31348",
+    "stationName": "Бурукан",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:08:51",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 929,
+    "stationCode": "31362",
+    "stationName": "Литке",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:14:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 931,
+    "stationCode": "31366",
+    "stationName": "О.Байдуков",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:18:39",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 934,
+    "stationCode": "31392",
+    "stationName": "Стойба",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:49:55",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 939,
+    "stationCode": "31436",
+    "stationName": "Джаоре",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:04:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 941,
+    "stationCode": "31443",
+    "stationName": "Мазаново",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:06:58",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 944,
+    "stationCode": "31474",
+    "stationName": "Усть-Умальта",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:24:26",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 948,
+    "stationCode": "31489",
+    "stationName": "Горин",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 01:00:04",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 951,
+    "stationCode": "31502",
+    "stationName": "Мариинск",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:02:45",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 953,
+    "stationCode": "31511",
+    "stationName": "Сергеевка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:17:35",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 956,
+    "stationCode": "31517",
+    "stationName": "Садовое",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 958,
+    "stationCode": "31524",
+    "stationName": "Екатеринославка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:14:12",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 959,
+    "stationCode": "31527",
+    "stationName": "Завитая",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:12:10",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 963,
+    "stationCode": "31548",
+    "stationName": "Верховье Урми",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:09:52",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 970,
+    "stationCode": "31586",
+    "stationName": "Константиновка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:12:25",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 974,
+    "stationCode": "31632",
+    "stationName": "Кур",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:03:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 977,
+    "stationCode": "31640",
+    "stationName": "Хабаровск (АД Большой) АМС",
+    "pingStatus": "0.5|422",
+    "lastMessageTime": "2023-08-24 00:01:45",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 978,
+    "stationCode": "31648",
+    "stationName": "Хабаровск (21 км) АМС",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-23 12:02:07",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 982,
+    "stationCode": "31679",
+    "stationName": "Мопау",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:05:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 988,
+    "stationCode": "31717",
+    "stationName": "Биджан АМС",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-18 12:02:38",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 990,
+    "stationCode": "31720",
+    "stationName": "Хабаровск (Красная Речка) АМС",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:02:45",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 994,
+    "stationCode": "31734",
+    "stationName": "Хабаровск",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:04:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 995,
+    "stationCode": "31736",
+    "stationName": "Хабаровск",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:58:45",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 996,
+    "stationCode": "31739",
+    "stationName": "Хабаровск (Мост) АМС",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:02:45",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1002,
+    "stationCode": "31790",
+    "stationName": "Георгиевка",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:03:15",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1003,
+    "stationCode": "31791",
+    "stationName": "Хор АМС",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:00:45",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1004,
+    "stationCode": "31792",
+    "stationName": "Бичевая",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:04:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1006,
+    "stationCode": "31815",
+    "stationName": "Сукпай",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:24:26",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1163,
+    "stationCode": "05375",
+    "stationName": "Кур",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 21:47:38",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1165,
+    "stationCode": "30385",
+    "stationName": "Усть-Нюкжа",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:14:56",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1167,
+    "stationCode": "05036",
+    "stationName": "с. Самара",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1168,
+    "stationCode": "05052",
+    "stationName": "с. Алексеевка",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1170,
+    "stationCode": "06259",
+    "stationName": "с. Саскаль",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:13:13",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1171,
+    "stationCode": "06032",
+    "stationName": "с. Помпеевка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:09:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1172,
+    "stationCode": "05435",
+    "stationName": "с. Бактор",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1173,
+    "stationCode": "06271",
+    "stationName": "с. Инарогда",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1174,
+    "stationCode": "06267",
+    "stationName": "с. Бомнак",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1175,
+    "stationCode": "06407",
+    "stationName": "с. Дмитриевка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:03:23",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1176,
+    "stationCode": "06403",
+    "stationName": "с. Бичура",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1177,
+    "stationCode": "06319",
+    "stationName": "устье р. Ижак",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:37:05",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1178,
+    "stationCode": "06424",
+    "stationName": "с. Светиловка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:38:01",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1179,
+    "stationCode": "06489",
+    "stationName": "Красивый",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1180,
+    "stationCode": "06487",
+    "stationName": "в 4.0 км от устья",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1181,
+    "stationCode": "06437",
+    "stationName": "с. Ивановка",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1182,
+    "stationCode": "06490",
+    "stationName": "в 3.0 км от устья",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:03:23",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1183,
+    "stationCode": "06550",
+    "stationName": "с. Среднебелое",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1184,
+    "stationCode": "06549",
+    "stationName": "с. Симоново",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1185,
+    "stationCode": "06543",
+    "stationName": "в 12 км ниже устья р. Акшима",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1186,
+    "stationCode": "06535",
+    "stationName": "с. Селеткан",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1189,
+    "stationCode": "06496",
+    "stationName": "пос. Таланджа",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:01:28",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1190,
+    "stationCode": "06485",
+    "stationName": "пос. Чегдомын",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 1191,
+    "stationCode": "05321",
+    "stationName": "с. Пушкино",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10014,
+    "stationCode": "31721",
+    "stationName": "Хабаровск (Центр) АМС",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:01:45",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10016,
+    "stationCode": "30686",
+    "stationName": "Игнашино",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:12:10",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10029,
+    "stationCode": "05415",
+    "stationName": "р.Кичмари - ст.Малмыж",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10030,
+    "stationCode": "05663",
+    "stationName": "р.Хийтя - Шишкина Казарма",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10031,
+    "stationCode": "05113",
+    "stationName": "Лончаково",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:20:35",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10032,
+    "stationCode": "05117",
+    "stationName": "Новосоветское",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:36:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10033,
+    "stationCode": "05348",
+    "stationName": "Сукпай",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:29:43",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10034,
+    "stationCode": "05358",
+    "stationName": "Архангеловка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:27:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10035,
+    "stationCode": "05370",
+    "stationName": "Урми",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 21:37:40",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10036,
+    "stationCode": "05383",
+    "stationName": "р.Кур - с.Новокуровка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:22:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10111,
+    "stationCode": "31087",
+    "stationName": "Улья",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:41:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10113,
+    "stationCode": "31168",
+    "stationName": "Аян",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:05:02",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10115,
+    "stationCode": "31362",
+    "stationName": "Литке",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:14:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10117,
+    "stationCode": "31366",
+    "stationName": "О.Байдуков",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:18:39",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10119,
+    "stationCode": "31436",
+    "stationName": "Джаоре",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:04:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10121,
+    "stationCode": "31770",
+    "stationName": "Советская Гавань",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 01:26:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10149,
+    "stationCode": "31168",
+    "stationName": "Аян",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:05:02",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10175,
+    "stationCode": "31366",
+    "stationName": "О.Байдуков",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:18:39",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10184,
+    "stationCode": "31168",
+    "stationName": "Аян",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:05:02",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10199,
+    "stationCode": "31168",
+    "stationName": "Аян",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:05:02",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10200,
+    "stationCode": "31366",
+    "stationName": "О.Байдуков",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:18:39",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10232,
+    "stationCode": "31436",
+    "stationName": "Джаоре",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:04:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10783,
+    "stationCode": "31174",
+    "stationName": "Большой Шантар",
+    "pingStatus": null,
+    "lastMessageTime": "2023-07-09 01:02:24",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10785,
+    "stationCode": "31174",
+    "stationName": "Большой Шантар",
+    "pingStatus": null,
+    "lastMessageTime": "2023-07-09 01:02:24",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10794,
+    "stationCode": "05365",
+    "stationName": "Кукан",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:20:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10796,
+    "stationCode": "31366",
+    "stationName": "О.Байдуков",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:18:39",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10797,
+    "stationCode": "31366",
+    "stationName": "О.Байдуков",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:18:39",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10800,
+    "stationCode": "31726",
+    "stationName": "Бычиха",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-23 12:02:07",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10801,
+    "stationCode": "31728",
+    "stationName": "Волочаевская ЕАО",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10802,
+    "stationCode": "31740",
+    "stationName": "п. Князе-Волконское",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:01:45",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10803,
+    "stationCode": "31793",
+    "stationName": "п. Переясловка",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10804,
+    "stationCode": "31558",
+    "stationName": "Амурск",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10806,
+    "stationCode": "31794",
+    "stationName": "п. Обор",
+    "pingStatus": "",
+    "lastMessageTime": "2023-07-18 21:02:41",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10807,
+    "stationCode": "31518",
+    "stationName": "с. Бочкаревка",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:01:45",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10808,
+    "stationCode": "31516",
+    "stationName": "с. Возжаевка",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10809,
+    "stationCode": "30590",
+    "stationName": "с. Уруша",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 10810,
+    "stationCode": "31738",
+    "stationName": "Хабаровск гидростанция",
+    "pingStatus": "",
+    "lastMessageTime": "2023-08-24 00:02:45",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12044,
+    "stationCode": "31087",
+    "stationName": "Улья",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:41:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12045,
+    "stationCode": "05395",
+    "stationName": "ГП2 р.Сита-с.К-Волконское",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12046,
+    "stationCode": "05395",
+    "stationName": "ГП2 р.Сита-с.К-Волконское",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12047,
+    "stationCode": "05746",
+    "stationName": "Смидович",
+    "pingStatus": null,
+    "lastMessageTime": "2023-07-19 21:49:24",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12069,
+    "stationCode": "05408",
+    "stationName": "Аксака",
+    "pingStatus": null,
+    "lastMessageTime": "",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12071,
+    "stationCode": "05008",
+    "stationName": "Нижнеспасское",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 21:56:07",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12072,
+    "stationCode": "05031",
+    "stationName": "Мариинское",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 22:10:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12104,
+    "stationCode": "31436",
+    "stationName": "Джаоре",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:04:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12106,
+    "stationCode": "31366",
+    "stationName": "О.Байдуков",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:18:39",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12108,
+    "stationCode": "31087",
+    "stationName": "Улья",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:41:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12125,
+    "stationCode": "31362",
+    "stationName": "Литке",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:14:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12130,
+    "stationCode": "05081",
+    "stationName": "Кирга",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-23 23:05:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12135,
+    "stationCode": "31770",
+    "stationName": "Советская Гавань",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 01:26:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12145,
+    "stationCode": "31087",
+    "stationName": "Улья",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:41:09",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12147,
+    "stationCode": "31770",
+    "stationName": "Советская Гавань",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 01:26:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12209,
+    "stationCode": "31366",
+    "stationName": "О.Байдуков",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:18:39",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12390,
+    "stationCode": "31362",
+    "stationName": "Литке",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:14:08",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12395,
+    "stationCode": "31436",
+    "stationName": "Джаоре",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 00:04:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  },
+  {
+    "_id": 12396,
+    "stationCode": "31770",
+    "stationName": "Советская Гавань",
+    "pingStatus": null,
+    "lastMessageTime": "2023-08-24 01:26:46",
+    "dateUpdate": null,
+    "lastStatus": null
+  }
+]
