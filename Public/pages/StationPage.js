@@ -194,8 +194,10 @@ export default {
 
                                     <div class="pagination flex gap-[10px] items-center">
                                         Страница:
-                                        <button v-for="page in totalPages" :key="page"
-                                            class="bg-gray-300 text-white w-[30px] h-[30px] rounded-full grid place-items-center">
+                                        <button v-for="page in totalPages" :key="page"  @click="currentPage = page"
+                                            class="w-[30px] h-[30px] rounded-full grid place-items-center transition"                                
+                                            :class="currentPage === page ? 'bg-blue-600 text-white': 'bg-gray-300 text-black hover:bg-gray-400'"
+                                            >
                                             {{ page }}
                                         </button>
                                     </div>
@@ -232,151 +234,148 @@ export default {
                     </div>
                 </div>
 
-      
+    <transition name="fade">
+      <teleport to="#modalRoot">
+        <div
+          v-if="showModal"
+          class="modal-overlay fixed inset-0 z-20 bg-black/50 grid place-items-center"
+        >
+          <div class="modal-window bg-white w-[1100px] max-h-[90vh] overflow-y-auto rounded-xl shadow-xl p-6">
+            
+            <!-- header -->
+            <div class="station-item__header flex items-center justify-between border-b pb-3 mb-5">
+              <div class="back__link text-blue-600 cursor-pointer transition hover:-translate-x-1 text-xl" @click="showModal = false">
+                ← Назад
+              </div>
+              <div class="font-bold text-lg">
+                Станция <span class="index-station">{{ selectedStation?.stationCode }}</span>
+              </div>
+            </div>
 
+            <!-- form -->
+            <form id="form-item__station" class="space-y-6">
 
-  <transition name="fade">
-  <teleport to="#modalRoot">
-    <div
-      v-if="showModal"
-      class="modal-overlay fixed inset-0 z-20 bg-black/50 grid place-items-center"
-    >
-      <div class="modal-window bg-white w-[1100px] max-h-[90vh] overflow-y-auto rounded-xl shadow-xl p-6">
-        
-        <!-- header -->
-        <div class="station-item__header flex items-center justify-between border-b pb-3 mb-5">
-          <div class="back__link text-blue-600 cursor-pointer transition hover:-translate-x-1 text-xl" @click="showModal = false">
-            ← Назад
-          </div>
-          <div class="font-bold text-lg">
-            Станция <span class="index-station">{{ selectedStation?.stationCode }}</span>
+              <!-- row: индекс и название -->
+              <div class="grid grid-cols-2 gap-6">
+                <div class="text-xl">
+                  <label for="indexStation" class="block font-medium text-gray-700 ">Индекс</label>
+                  <input disabled type="text" id="indexStation" v-model="selectedStation.stationCode"
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-md p-2 text-lg"/>
+                </div>
+                <div class="text-xl">
+                  <label for="nameStation" class="block font-medium text-gray-700 ">Название</label>
+                  <input disabled type="text" id="nameStation" v-model="selectedStation.stationName"
+                    class="mt-1 block w-full rounded-md border-gray-300 shadow-md p-2 text-lg "/>
+                </div>
+              </div>
+
+              <!-- tabs -->
+              <div>
+                <div class="border-b border-gray-200">
+                  <nav class="flex items-center gap-[16px]" aria-label="Tabs">
+                    <button type="button"
+                      class="tab-btn pb-2 border-b-2 font-medium text-sm"
+                      :class="activeTab === 'instruments' ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700'"
+                      @click="activeTab = 'instruments'">
+                      Инструменты по станции
+                    </button>
+                    <button type="button"
+                      class="tab-btn pb-2 border-b-2 font-medium text-sm"
+                      :class="activeTab === 'attributes' ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700'"
+                      @click="activeTab = 'attributes'">
+                      Атрибуты по станции
+                    </button>
+                  </nav>
+                </div>
+
+                <div class="mt-4">
+                  <!-- Tab content -->
+                  <div v-show="activeTab === 'instruments'" class="space-y-4">
+                    <div id="instrumentBlock" class="bg-gray-50 border rounded p-3 grid gap-[10px]">
+                      <!-- здесь будет динамика по инструментам -->
+                      <p class="text-gray-500 text-sm">Блок инструментов станции</p>
+
+                      <div class="grid gap-2 ">
+                        <label class="text-gray-500 text-sm grid! gap-1">
+                        <p class="text-xl text-black">
+                        Порт и адрес подключения Telnet
+                        </p>
+                        <input type="text" class="w-full p-2 bg-slate-200 text-black text-lg outline-none border-none rounded-lg" v-model="forTelnet.description" />
+                        </label>
+                      <p class="w-fit p-2 border border-gray-300 text-black text-lg rounded-xl shadow-lg shadow-black cursor-pointer hover:bg-gray-300 transition hover:scale-105"  @click="changeAddressModal(forTelnet)">Редактировать</p>
+                      </div>
+
+                      <div class="grid gap-2 ">
+                        <label class="text-gray-500 text-sm grid! gap-1">
+                      <p class="text-xl  text-black">
+                        IP адрес поста
+                      </p>
+                        <input type="text" class="w-full p-2 bg-slate-200 text-black text-lg outline-none border-none rounded-lg" v-model="forIP.description" />
+                        </label>
+                        <p class="w-fit p-2 border border-gray-300 text-black text-lg rounded-xl shadow-lg shadow-black cursor-pointer hover:bg-gray-300 transition hover:scale-105" @click="changeAddressModal(forIP)">Редактировать</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Конец инструментов -->
+
+                  <!-- Атрибуты -->
+                  <div v-show="activeTab === 'attributes'" class="space-y-4">
+                    <div class="flex items-center gap-3">
+                      <select id="attrId" class="rounded border-gray-300 shadow-lg focus:ring-blue-500 p-3" v-model="selectedAttribute">
+                        <option disabled value="">Выбрать атрибут</option>
+                        <option v-for="attr in filteredAttributesForSelector"
+                          :key="attr.attrTypeId"
+                          :value="attr">
+                          {{attr.desc}}
+                        </option>
+                      </select>
+
+                      <input v-model="inputOption" type="text" id="attrNew" placeholder="Значение"
+                        class="flex-1 rounded border-gray-300 shadow-sm focus:ring-blue-500 p-3"/>
+                      <button type="button" class="btn btn-success bg-green-600 text-white px-4 py-2 rounded"
+                        @click="addAttribute()">
+                        Добавить атрибут
+                      </button>
+                    </div>
+                    <table class="min-w-full border divide-y divide-gray-200">
+                      <thead class="bg-gray-50">
+                        <tr>
+                          <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Наименование</th>
+                          <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Значение</th>
+                          <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Дата</th>
+                          <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Обновление</th>
+                        </tr>
+                      </thead>
+                      <tbody id="attrBlock" class="divide-y divide-gray-200">
+                        <tr v-for="(attr, idx) in filteredAttributes" :key="idx">
+                          <td class="px-3 py-2">{{ attr.desc }}</td>
+                          <td class="px-3 py-2"><input type="text" v-model="attr.value"/></td>
+                          <td class="px-3 py-2">{{ formatDate(attr.date) }}</td>
+                          <td class="px-3 py-2">
+                          <button class="p-2 bg-green-400 text-white rounded hover:bg-green-500 active:bg-green-600" @click="updateStationAttribute(attr)">Обновить</button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                </div>
+                </div>
+
+              <!-- save btn -->
+              <div class="flex justify-end">
+                <button type="button" class="mt-2 bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700 active:bg-blue-800">
+                  Сохранить
+                </button>
+              </div>
+            </form>
+
           </div>
         </div>
+      </teleport>
+    </transition>
 
-        <!-- form -->
-        <form id="form-item__station" class="space-y-6">
-
-          <!-- row: индекс и название -->
-          <div class="grid grid-cols-2 gap-6">
-            <div class="text-xl">
-              <label for="indexStation" class="block font-medium text-gray-700 ">Индекс</label>
-              <input disabled type="text" id="indexStation" v-model="selectedStation.stationCode"
-                class="mt-1 block w-full rounded-md border-gray-300 shadow-md p-2 text-lg"/>
-            </div>
-            <div class="text-xl">
-              <label for="nameStation" class="block font-medium text-gray-700 ">Название</label>
-              <input disabled type="text" id="nameStation" v-model="selectedStation.stationName"
-                class="mt-1 block w-full rounded-md border-gray-300 shadow-md p-2 text-lg "/>
-            </div>
-          </div>
-
-          <!-- tabs -->
-          <div>
-            <div class="border-b border-gray-200">
-              <nav class="flex items-center gap-[16px]" aria-label="Tabs">
-                <button type="button"
-                  class="tab-btn pb-2 border-b-2 font-medium text-sm"
-                  :class="activeTab === 'instruments' ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700'"
-                  @click="activeTab = 'instruments'">
-                  Инструменты по станции
-                </button>
-                <button type="button"
-                  class="tab-btn pb-2 border-b-2 font-medium text-sm"
-                  :class="activeTab === 'attributes' ? 'border-blue-500 text-blue-600' : 'border-transparent text-gray-500 hover:text-gray-700'"
-                  @click="activeTab = 'attributes'">
-                  Атрибуты по станции
-                </button>
-              </nav>
-            </div>
-
-            <div class="mt-4">
-              <!-- Tab content -->
-              <div v-show="activeTab === 'instruments'" class="space-y-4">
-                <div id="instrumentBlock" class="bg-gray-50 border rounded p-3 grid gap-[10px]">
-                  <!-- здесь будет динамика по инструментам -->
-                  <p class="text-gray-500 text-sm">Блок инструментов станции</p>
-
-                  <div class="grid gap-2 ">
-                    <label class="text-gray-500 text-sm grid! gap-1">
-                    <p class="text-xl text-black">
-                    Порт и адрес подключения Telnet
-                    </p>
-                    <input type="text" class="w-full p-2 bg-slate-200 text-black text-lg outline-none border-none rounded-lg" v-model="forTelnet.description" />
-                    </label>
-                  <p class="w-fit p-2 border border-gray-300 text-black text-lg rounded-xl shadow-lg shadow-black cursor-pointer hover:bg-gray-300 transition hover:scale-105"  @click="changeAddressModal(forTelnet)">Редактировать</p>
-                  </div>
-
-                  <div class="grid gap-2 ">
-                    <label class="text-gray-500 text-sm grid! gap-1">
-                  <p class="text-xl  text-black">
-                    IP адрес поста
-                  </p>
-                    <input type="text" class="w-full p-2 bg-slate-200 text-black text-lg outline-none border-none rounded-lg" v-model="forIP.description" />
-                    </label>
-                    <p class="w-fit p-2 border border-gray-300 text-black text-lg rounded-xl shadow-lg shadow-black cursor-pointer hover:bg-gray-300 transition hover:scale-105" @click="changeAddressModal(forIP)">Редактировать</p>
-                  </div>
-                </div>
-              </div>
-              <!--Конец инструментов -->
-
-              <!-- Атрибуты -->
-              <div v-show="activeTab === 'attributes'" class="space-y-4">
-                <div class="flex items-center gap-3">
-                  <select id="attrId" class="rounded border-gray-300 shadow-lg focus:ring-blue-500 p-3" v-model="selectedAttribute">
-                    <option disabled value="">Выбрать атрибут</option>
-                    <option v-for="attr in filteredAttributesForSelector"
-                      :key="attr.attrTypeId"
-                      :value="attr">
-                      {{attr.desc}}
-                    </option>
-                  </select>
-
-                  <input v-model="inputOption" type="text" id="attrNew" placeholder="Значение"
-                    class="flex-1 rounded border-gray-300 shadow-sm focus:ring-blue-500 p-3"/>
-                  <button type="button" class="btn btn-success bg-green-600 text-white px-4 py-2 rounded"
-                    @click="addAttribute()">
-                    Добавить атрибут
-                  </button>
-                </div>
-                <table class="min-w-full border divide-y divide-gray-200">
-                  <thead class="bg-gray-50">
-                    <tr>
-                      <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Наименование</th>
-                      <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Значение</th>
-                      <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Дата</th>
-                      <th class="px-3 py-2 text-left text-xs font-medium text-gray-500 uppercase">Обновление</th>
-                    </tr>
-                  </thead>
-                  <tbody id="attrBlock" class="divide-y divide-gray-200">
-                    <tr v-for="(attr, idx) in filteredAttributes" :key="idx">
-                      <td class="px-3 py-2">{{ attr.desc }}</td>
-                      <td class="px-3 py-2"><input type="text" v-model="attr.value"/></td>
-                      <td class="px-3 py-2">{{ formatDate(attr.date) }}</td>
-                      <td class="px-3 py-2">
-                      <button class="p-2 bg-green-400 text-white rounded hover:bg-green-500 active:bg-green-600" @click="updateStationAttribute(attr)">Обновить</button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-
-            </div>
-            </div>
-
-          <!-- save btn -->
-          <div class="flex justify-end">
-            <button type="button" class="mt-2 bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700 active:bg-blue-800">
-              Сохранить
-            </button>
-          </div>
-        </form>
-
-      </div>
-    </div>
-  </teleport>
-  </transition>
-
-            </div>
+  </div>
   `,
 
   data() {
@@ -392,11 +391,10 @@ export default {
 
       forIp: "",
       forTelnet: "",
-      //
 
       // ? Для пагинации (забил пока на нее)
       limit: 10,
-      totalPages: 0,
+      currentPage: 1, // 👈 добавляем
 
       //? Основные данные
       stations: [], // список станций
@@ -452,24 +450,33 @@ export default {
 
   //! ....................................
   computed: {
+    totalPages() {
+      // Когда меняем лимит пересчитываем кол-во страниц
+      return this.getPageCount(this.messages.length, this.limit);
+    },
+
     filteredAttributesForSelector() {
       return this.attributes.filter((attr) => !attr.value);
     },
     filteredAttributes() {
       return this.attributes.filter((attr) => attr.value);
     },
-
     filteredMessages() {
       // Простая фильтрация
-      return this.messages
-        .filter((msg) => {
-          const search = this.searchQuery.toLowerCase();
-          return (
-            msg.msg_key.toLowerCase().includes(search) ||
-            msg.text.toLowerCase().includes(search)
-          );
-        })
-        .slice(0, this.limit);
+      const search = this.searchQuery.toLowerCase();
+      const filtered = this.messages.filter((msg) => {
+        return (
+          msg.msg_key.toLowerCase().includes(search) ||
+          msg.text.toLowerCase().includes(search)
+        );
+      });
+
+      const start = (this.currentPage - 1) * this.limit;
+      console.log("✌️start --->", start);
+      const end = Number(start) + Number(this.limit);
+      console.log("✌️end --->", end);
+
+      return filtered.slice(start, end);
     },
     // Фильтрация станций по поисковому запросу
     filteredStations() {
@@ -534,8 +541,7 @@ export default {
   },
   watch: {
     limit(newVal, oldVal) {
-      // если меняется лимит, пересчитываем totalPages
-      this.totalPages = this.getPageCount(this.messages.length, newVal);
+      this.currentPage = 1; // 👈 сбрасываем при смене лимита
     },
   },
   methods: {

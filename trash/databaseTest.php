@@ -258,7 +258,7 @@ if (!Database::collectionExists('sites')) {
     $sitesCollection = Database::getCollection('sites');
     
     // Массив с данными для вставки
-
+}
 
 
 
@@ -540,8 +540,3 @@ if (!Database::collectionExists('sites')) {
 //     'stationCode' => $site->stationCode,
 //     ...
 // ]);
-
-
-
-
-// echo "Данные вставлены!";

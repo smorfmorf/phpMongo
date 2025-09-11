@@ -25,7 +25,6 @@ function getStationInstrumentDataById($siteId, $instrumentId) {
 
     // Подключение к PostgreSQL
     global $host_Postgres, $port_Postgres, $dbName_Postgres, $user_Postgres, $pass_Postgres;
-
     $dsn = sprintf(
         "pgsql:host=%s;port=%s;dbname=%s;user=%s;password=%s",
         $host_Postgres,
