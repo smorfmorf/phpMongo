@@ -422,7 +422,6 @@ export default {
     };
   },
   //! Методы жизненого цикла:
-
   async mounted() {
     await this.loadStations();
     this.setupPopoverListeners();
@@ -447,11 +446,10 @@ export default {
       }
     }
   },
-
   //! ....................................
   computed: {
     totalPages() {
-      // Когда меняем лимит пересчитываем кол-во страниц
+      // Когда меняем лимит или длина сообщений пересчитываем кол-во страниц
       return this.getPageCount(this.messages.length, this.limit);
     },
 
@@ -769,7 +767,6 @@ export default {
         }
       );
       this.messages = data.rep;
-      this.totalPages = this.getPageCount(this.messages.length, this.limit);
     },
 
     closeMessages() {
